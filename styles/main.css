@@ -1,0 +1,59 @@
+/* Open Sans font */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'),
+         local('OpenSans-Regular'),
+         url('fonts/OpenSans-Regular.woff') format('woff');
+}
+
+body {
+    /* Default text font */
+    font-family: 'Open Sans', sans-serif;
+
+    /* Align body to center */
+    margin: 0 auto;
+
+    /* Limit text width for easier reading on wide screens */
+    max-width: 40em;
+
+    /* Leave space on edges for small-screened devices */
+    padding: 1em;
+}
+
+header, footer {
+    /* Center-align header and footer */
+    text-align: center;
+}
+
+h1, h2 {
+    /* Non-bold main headers */
+    font-weight: normal;
+}
+
+h3 {
+    /* Bold, non-italic, normal sized title */
+    font-weight: bold;
+    font-style: normal;
+    font-size: inherit;
+
+    /* No space between title and sub-title */
+    margin-bottom: 0;
+}
+
+h4 {
+    /* Non-bold, italic, normal sized sub-title */
+    font-weight: normal;
+    font-style: italic;
+    font-size: inherit;
+
+    /* No space around sub-title */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body > section + section {
+    /* Divider between top-level sections */
+    border-top: 1px solid #ccc;
+}
