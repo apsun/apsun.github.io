@@ -21,6 +21,16 @@ body {
     padding: 1em;
 }
 
+@media print {
+    /* Override styling rules for printing */
+    body {
+        font-size: 12px;
+        margin: initial;
+        max-width: initial;
+        padding: initial;
+    }
+}
+
 header, footer {
     /* Center-align header and footer */
     text-align: center;
