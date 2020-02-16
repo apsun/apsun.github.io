@@ -21,16 +21,6 @@ body {
     padding: 1em;
 }
 
-@media print {
-    /* Override styling rules for printing */
-    body {
-        font-size: 12px;
-        margin: initial;
-        max-width: initial;
-        padding: initial;
-    }
-}
-
 header, footer {
     /* Center-align header and footer */
     text-align: center;
@@ -66,4 +56,21 @@ hr {
     /* Divider between top-level sections */
     border: 0;
     border-top: 1px solid #ccc;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+@media print {
+    /* Expand to full page in printed pages, fix font size */
+    body {
+        font-size: 12px;
+        margin: initial;
+        max-width: initial;
+        padding: initial;
+    }
+
+    /* Hide footer in printed pages */
+    footer {
+        display: none;
+    }
 }
