@@ -16,86 +16,91 @@
             University of Illinois at Urbana-Champaign</a> with a B.S. in
             Computer Science. My main interests are systems programming,
             networking, and security. I currently work at Facebook as a
-            Production Engineer.
+            Production Engineer. In my free time I like exploring the
+            implementation details of systems and making small useful tools,
+            many of which you can find below.
         </p>
     </section>
+    <hr>
     <section>
         <h2>Projects</h2>
-        <section>
-            <h3>
-                <a href="https://github.com/apsun/loliOS">loliOS</a>
-                (C, x86 assembly)
-            </h3>
-            <h4>Oct 2016 - Present</h4>
-            <p>
-                A <em>small</em> and <em>lightweight</em> Linux-like
-                kernel, implemented from scratch. Supports signals, audio,
-                networking, fork/exec, pipes, and more. Includes a basic
-                userspace environment with a custom libc. Originally a
-                project for the
-                <a href="https://courses.engr.illinois.edu/ece391">
-                Computer Systems Engineering</a> course at UIUC.
-            </p>
-        </section>
-        <section>
-            <h3>
-                <a href="https://github.com/apsun/uSticker">uSticker</a>
-                (Kotlin, Android)
-            </h3>
-            <h4>Jan 2018 - Present</h4>
-            <p>
-                An extension for the Android Gboard app that lets you
-                use any image from your device as a sticker. You can
-                find it on Google Play
-                <a href="https://play.google.com/store/apps/details?id=com.crossbowffs.usticker">
-                here</a>.
-            </p>
-        </section>
-        <section>
-            <h3>
-                <a href="https://github.com/apsun/AbsoluteTouchEx">AbsoluteTouchEx</a>
-                (C++, Windows)
-            </h3>
-            <h4>Aug 2018 - Apr 2019</h4>
-            <p>
-                Turns any Windows precision touchpad into a tablet.
-                Simulates absolute cursor movement by injecting itself
-                into other processes and intercepting raw touchpad HID
-                events. Replaces the older
-                <a href="https://github.com/apsun/AbsoluteTouch">
-                AbsoluteTouch</a> project, which only worked with
-                Synaptics touchpads.
-            </p>
-        </section>
-        <section>
-            <h3>
-                <a href="https://github.com/apsun/NekoSMS">NekoSMS</a>
-                (Java, Android)
-            </h3>
-            <h4>Mar 2015 - Apr 2019</h4>
-            <p>
-                A pattern-based SMS blocker for Android, currently the
-                only true SMS blocker that supports Android 4.4 and above.
-                Uses the Xposed framework to modify system code. Motivated
-                the creation of
-                <a href="https://github.com/apsun/RemotePreferences">
-                RemotePreferences</a>, a library for accessing Android
-                preferences across app boundaries.
-            </p>
-        </section>
-        <section>
-            <h3>
-                <a href="https://github.com/apsun/GoogleImageShell">GoogleImageShell</a>
-                (C#, Windows)
-            </h3>
-            <h4>July 2016 - May 2017</h4>
-            <p>
-                Upload images to Google reverse image search directly
-                from Windows Explorer. Note: this project is not
-                affiliated with or endorsed by Google.
-            </p>
-        </section>
+        <ul>
+            <li>
+                <h3>
+                    <a href="https://github.com/apsun/loliOS">loliOS</a> (C, x86 assembly)
+                </h3>
+                <p>
+                    A <em>small</em> and <em>lightweight</em> Linux-like kernel, implemented from scratch.
+                    Supports signals, audio, networking, fork/exec, pipes, and more. Includes a basic
+                    userspace environment that can connect to internet servers and play music, amongst
+                    other things. Originally a project for the
+                    <a href="https://courses.engr.illinois.edu/ece391">Computer Systems Engineering</a>
+                    course at UIUC.
+                </p>
+            </li>
+            <li>
+                <h3>
+                    <a href="https://github.com/apsun/uSticker">uSticker</a> (Kotlin, Android)
+                </h3>
+                <p>
+                    An extension for the Android Gboard app that lets you use any image from your device as
+                    a sticker. You can find it on Google Play
+                    <a href="https://play.google.com/store/apps/details?id=com.crossbowffs.usticker">here</a>.
+                </p>
+            </li>
+            <li>
+                <h3>
+                    <a href="https://github.com/apsun/AbsoluteTouchEx">AbsoluteTouchEx</a> (C++, Windows)
+                </h3>
+                <p>
+                    Lets you use your Windows precision touchpad as a tablet in games. Simulates cursor
+                    input by injecting itself into the target process and intercepting touchpad HID events.
+                    Replaces the older <a href="https://github.com/apsun/AbsoluteTouch">AbsoluteTouch</a>
+                    project, which only worked with Synaptics touchpads.
+                </p>
+            </li>
+            <li>
+                <h3>
+                    <a href="https://github.com/apsun/NekoSMS">NekoSMS</a> (Java, Android)
+                </h3>
+                <p>
+                    A pattern-based SMS blocker for Android, currently the only standalone SMS blocker that
+                    supports Android 4.4 and above. Requires Xposed framework. Motivated the creation of
+                    <a href="https://github.com/apsun/RemotePreferences">RemotePreferences</a>, a library
+                    for accessing Android preferences across app boundaries.
+                </p>
+            </li>
+            <li>
+                <h3>
+                    <a href="https://github.com/apsun/sc2mp3">SoundCloud to MP3</a> (JavaScript)
+                </h3>
+                <p>
+                    Firefox add-on that adds a download button to SoundCloud tracks. Doesn't call out to any
+                    external services, and supports downloading in AAC format if you have a Go+ subscription.
+                    You can download it <a href="https://addons.mozilla.org/en-US/firefox/addon/sc2mp3/">here</a>.
+                </p>
+            </li>
+            <li>
+                <h3>
+                    <a href="https://github.com/apsun/GoogleImageShell">GoogleImageShell</a> (C#, Windows)
+                </h3>
+                <p>
+                    Upload images to Google reverse image search directly from the Windows Explorer context menu.
+                </p>
+            </li>
+            <li>
+                <h3>
+                    <a href="https://github.com/apsun/QuoteLock">QuoteLock</a> (Java, Android)
+                </h3>
+                <p>
+                    Originally developed as a silly frontend for <a href="https://github.com/apsun/VNaaS">
+                    Visual Novel as a Service</a>, this app displays random quotes on your Android lockscreen.
+                    Requires Xposed framework.
+                </p>
+            </li>
+        </ul>
     </section>
+    <hr>
     <section>
         <h2>Contact</h2>
         <ul>
@@ -105,7 +110,7 @@
         </ul>
     </section>
     <footer>
-        Now with 75% reduced page size!
+        This page loads in 25 TCP packets, or your money back!
     </footer>
 </body>
 </html>
